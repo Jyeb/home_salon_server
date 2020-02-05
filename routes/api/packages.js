@@ -84,10 +84,10 @@ router.patch('/:id', auth, async (req, res) => {
     return res.status(400).json({ errors: errors.array() })
   }
   try {
-    const package = await PackageModel.findByIdAndUpdate(id, req.body, {
-      new: true
+    PackageModel.updateOne({ _id: req.params.id }, req.body, async (err, raw) => {
+      const package = await PackageModel.findById(req.params.id)
+      res.send(package)
     })
-    res.send(package)
   } catch (err) {
     console.error(err.message)
     res.status(500).send('Server Error')
