@@ -5,7 +5,7 @@ a {
   text-decoration: none;
 }
 
-img {
+.img1 {
   position: absolute;
   left: 20px;
   top: -30px;
@@ -13,13 +13,13 @@ img {
   width: 130px;
 }
 @media (max-width: 1224px) {
-  img {
+  .img1 {
     left: calc(100vw - 150px);
   }
 }
 
 @media (max-width: 600px) {
-  img {
+  .img1 {
     height: 120px;
     width: 120px;
   }
