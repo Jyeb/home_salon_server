@@ -1,29 +1,36 @@
 const express = require('express')
 const router = express.Router()
-const { check, validationResult } = require('express-validator/check')
-// API route for admin // api/admin
-// Used to register admin account
-// also contains validation using express-validator
-// in this specific use case validation was somewhat neglible
-// as the only account to exist is a single admin account
-// which is created using seeded data
-router.post(
-  '/',
-  [
-    check('name', 'Name not found')
-      .not()
-      .isEmpty(),
-    check('email', 'Email not found').isEmail(),
-    check('password', 'Password requires 6 or more characters').isLength({
-      min: 6
+let Admin = require('../../models/seeds/AdminSeed')
+const AdminModel = require('../../models/Admin')
+const jwt = require('jsonwebtoken')
+const config = require('config')
+// const auth = require('../../middleware/auth')
+// API Route
+// GET req => api/admin
+// "auth" parameter to protect route from non authorized requests
+router.get('/', (req, res) => {
+  // Create admin profile
+  AdminModel.create(Admin)
+    .then(admin => {
+      const payload = {
+        admin: {
+          id: admin.id
+        }
+      }
+      // Add auth token to admin user
+      jwt.sign(
+        payload,
+        config.get('jwtsecret'),
+        { expiresIn: 3600 },
+        (err, token) => {
+          if (err) throw err
+          res.json({ token })
+        }
+      )
     })
-  ],
-  (req, res) => {
-    const errors = validationResult(req)
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() })
-    }
-  }
-)
+    .catch(err => {
+      res.sendStatus(err.message)
+    })
+})
 
 module.exports = router

@@ -12,13 +12,13 @@ Outside of the benefits for the client, the application will serve as a platform
 
 The website which the business is currently using exists as a sequence of static web pages with minimal design features, and HTML text. In the creation of the new website, modern design principles will be applied with the use of a user friendly navigation bar, and made visually appealing through the use of CSS.
 
-One of the major changes from the existing product would see the addition of an admin link which would redirect to a login page in which only the business owner would be granted access. Once logged in the owner would have the ability to perform the CRUD operations on the existing packages being sold, which in this case is a service. The application will possess the following Features.
+One of the major changes from the existing product would see the addition of an admin link which would redirect to a login page in which only the business owner would be granted access. Once logged in the owner would have the ability to perform the CRUD operations on the existing deals being sold, which in this case is a service. The application will possess the following Features.
 
 - The client will have an admin account
-- A client will have the ability to create a package
-- A client can edit existing packages
-- A client can delete existing packages
-- A customer view the available packages
+- A client will have the ability to create a deal
+- A client can edit existing deals
+- A client can delete existing deals
+- A customer view the available deals
 
 ## Target Audience
 
@@ -27,7 +27,7 @@ Potential employers in the tech space are also apart of the target audience as t
 
 ## Tech Stack
 
-MongoDB is a NoSQL database language used in the development of web applications. It will be used to store the information of the packages which are being sold, allowing the client to update, and alter them at will. The MongoAtlas cloud tool will be used as the management system responsible for handling the intricacies of the database. In order to create the server and API the express.js framework is to be used, it is one of the most popular web application frameworks built on JavaScript. Both of these technologies will use the node runtime environment which is designed to execute native JavaScript code outside of a web browser, and also permits the use of a large variety of existing functionality native the node extension. The React.js framework will be used for the front-end of the application in order to create the UI. Below is a list of the technology stack used in the development of the application.
+MongoDB is a NoSQL database language used in the development of web applications. It will be used to store the information of the deals which are being sold, allowing the client to update, and alter them at will. The MongoAtlas cloud tool will be used as the management system responsible for handling the intricacies of the database. In order to create the server and API the express.js framework is to be used, it is one of the most popular web application frameworks built on JavaScript. Both of these technologies will use the node runtime environment which is designed to execute native JavaScript code outside of a web browser, and also permits the use of a large variety of existing functionality native the node extension. The React.js framework will be used for the front-end of the application in order to create the UI. Below is a list of the technology stack used in the development of the application.
 
 - MongoDB
 - Express.js

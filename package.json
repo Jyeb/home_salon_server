@@ -4,7 +4,7 @@
   "description": "home_salon application built using the MERN stack",
   "main": "server.js",
   "scripts": {
-    "test": "mocha || true",
+    "test": "mocha --exit || true",
     "start": "node server.js",
     "server": "nodemon server.js",
     "home_salon_client": "npm install --prefix home_salon_client",
@@ -26,6 +26,7 @@
     "bcryptjs": "^2.4.3",
     "bootstrap": "^4.4.1",
     "config": "^3.2.5",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-validator": "^6.3.1",
     "gravatar": "^1.8.0",
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "concurrently": "^5.0.2",
     "mocha": "^7.0.1",
     "nodemon": "^2.0.2"
