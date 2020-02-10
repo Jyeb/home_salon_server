@@ -4,5 +4,11 @@
     "top": "auto",
     "bottom": 0,
     "height": 64
+  },
+  "footer": {
+    "position": "absolute",
+    "top": "calc(85.9vh)",
+    "height": 134,
+    "backgroundColor": "#F0C6F9"
   }
 }

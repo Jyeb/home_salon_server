@@ -9,16 +9,18 @@ body {
   overflow-x: hidden !important;
   line-height: 1.5;
   letter-spacing: 0.3px;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
 .landing {
-
-
-  h1,h2,h3,h4,h5,h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: pink;
   }
-
 
   // Global styles for landing page
   a {
@@ -39,9 +41,10 @@ body {
     background: url(/assets/images/home-bg.jpg) center center/cover no-repeat !important;
   }
   .bg-img-black {
-    background: url(/assets/images/home-bg-black.png) center center/cover no-repeat !important;
+    background: url(/assets/images/home-bg-black.png) center center/cover
+      no-repeat !important;
   }
-  
+
   .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -92,7 +95,6 @@ body {
       0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
   }
 
-  
   // Card styles
   .card {
     transition: all 0.3s ease;
@@ -107,8 +109,9 @@ body {
   // Subscribe input
   .subscribe-input {
     display: inline-flex;
-    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
-    padding: .25rem .25rem .25rem 1rem;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    padding: 0.25rem 0.25rem 0.25rem 1rem;
     border-radius: 2rem;
     overflow: hidden;
     background: white;
@@ -142,16 +145,16 @@ body {
     height: 3.5rem;
     width: 3.5rem;
     border-radius: 64px;
-    border: 2px solid rgba(pink, .8);
+    border: 2px solid rgba(pink, 0.8);
     color: pink;
-    background: rgba(pink, .2);
+    background: rgba(pink, 0.2);
     .material-icons {
       font-size: 1.5rem;
     }
     &.secondary {
-      border: 2px solid rgba(black, .8);
+      border: 2px solid rgba(black, 0.8);
       color: black;
-      background: rgba(black, .2);
+      background: rgba(black, 0.2);
     }
   }
 
@@ -243,7 +246,6 @@ body {
     }
   }
   @media only screen and (max-width: 767px) {
-
     height: 100vh;
     left: auto;
     right: 0;
@@ -252,11 +254,12 @@ body {
     transition: all 0.3s ease-in-out;
 
     &.closed {
-  
       .header__toggle {
         color: black;
         background: white;
-        box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
+        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+          0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 18px 0px rgba(0, 0, 0, 0.12);
       }
     }
     .header__toggle {
@@ -295,7 +298,12 @@ body {
   padding: 180px 0 !important;
   color: white;
   overflow: hidden;
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: white;
   }
   .section-intro1__title {
@@ -329,8 +337,10 @@ body {
     // left: 60px;
     img {
       width: 100%;
-      border-radius: .5rem;
-      box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12)
+      border-radius: 0.5rem;
+      box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+        0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 18px 0px rgba(0, 0, 0, 0.12);
     }
     .section-intro1__product__link {
       position: absolute;
@@ -388,7 +398,12 @@ body {
 .section-intro2 {
   padding: 180px 0 0 !important;
   overflow: visible !important;
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: white;
   }
   .section-intro2__product {
@@ -401,7 +416,7 @@ body {
     max-width: 780px;
     margin-bottom: 5rem;
     img {
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
     }
   }
@@ -586,7 +601,7 @@ body {
   }
 
   .service7__card {
-    background-image: url("/assets/images/illustrations/1.svg");
+    background-image: url('/assets/images/illustrations/1.svg');
     background-size: 250px;
     background-repeat: no-repeat;
     background-position: center right;
@@ -650,7 +665,12 @@ body {
 .section-cta1 {
   color: #fff;
   background: url(/assets/images/home-bg.jpg) center center/cover no-repeat;
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: white;
   }
   h2 {
@@ -670,7 +690,6 @@ body {
   .pink {
     color: pink;
   }
-
 
   .pricing1__card-header {
     padding: 12px;
@@ -699,7 +718,7 @@ body {
     }
 
     .font {
-      color: black,
+      color: black;
     }
     div {
       padding: 10px;
@@ -709,7 +728,12 @@ body {
 
 // footer1
 .section-footer1 {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: white;
   }
   h4 {
@@ -718,7 +742,7 @@ body {
     position: relative;
   }
   h4::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -8px;
     left: 0;

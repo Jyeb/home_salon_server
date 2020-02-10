@@ -3,43 +3,41 @@ import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { logout } from '../../actions/auth'
-import {
-  IconButton,
-  AppBar,
-  makeStyles,
-  BottomNavigation
-} from '@material-ui/core'
-
+import { AppBar, Button, makeStyles } from '@material-ui/core'
+import Styling from '../../stylesheets/footer'
+const styling = Styling
 const Footer = ({ auth: { isAuthenticated, loading }, logout }) => {
+  const navStyles = makeStyles(theme => styling)
+  const classes = navStyles()
   const authLinks = (
     <ul>
-      <li>
+      <Button>
         <Link to='/Deals'>Deals</Link>
-      </li>
-      <li>
+      </Button>
+      <Button>
         <Link to='/dashboard'>
           <i className='fas fa-user' />{' '}
           <span className='hide-sm'>Dashboard</span>
         </Link>
-      </li>
-      <li>
+      </Button>
+      <Button>
         <a onClick={logout} href='#!'>
           <i /> <span className='hide-sm'>Logout</span>
         </a>
-      </li>
+      </Button>
     </ul>
   )
 
   const guestLinks = (
     <ul>
-      <li>
+      <Button>
         <Link to='/login'>Login</Link>
-      </li>
+      </Button>
     </ul>
   )
 
   return (
-    <AppBar position='fixed-bottom'>
+    <AppBar className={classes.footer}>
       {!loading && (
         <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
       )}
