@@ -14,12 +14,14 @@ const Footer = ({ auth: { isAuthenticated, loading }, logout }) => {
       <Button>
         <Link to='/Deals'>Deals</Link>
       </Button>
+      <br />
       <Button>
         <Link to='/dashboard'>
           <i className='fas fa-user' />{' '}
           <span className='hide-sm'>Dashboard</span>
         </Link>
       </Button>
+      <br />
       <Button>
         <a onClick={logout} href='#!'>
           <i /> <span className='hide-sm'>Logout</span>
